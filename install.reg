@@ -1,0 +1,29 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\CrlfTools]
+"MUIVerb"="CRLF Tool"
+"SubCommands"="CrlfTool.CrLfToLf;CrlfTool.LfToCrLf;CrlfTool.AddNewLine;CrlfTool.RemoveNewLine"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\CrlfTool.CrLfToLf]
+@="CRLF to LF"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\CrlfTool.CrLfToLf\command]
+@="C:\\path\\to\\crlftool.exe -l \"%1\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\CrlfTool.LfToCrLf]
+@="LF to CRLF"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\CrlfTool.LfToCrLf\command]
+@="C:\\path\\to\\crlftool.exe -c \"%1\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\CrlfTool.AddNewLine]
+@="Add new line"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\CrlfTool.AddNewLine\command]
+@="C:\\path\\to\\crlftool.exe -a \"%1\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\CrlfTool.RemoveNewLine]
+@="Remove new line"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\CrlfTool.RemoveNewLine\command]
+@="C:\\path\\to\\crlftool.exe -r \"%1\""
